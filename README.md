@@ -1,3 +1,5 @@
+![AI Assisted](https://img.shields.io/badge/AI%20Assisted-OpenAI%20Codex-blueviolet?logo=openai&logoColor=white)
+
 # TextMotion Studio
 
 A web-based motion typography playground inspired by Typemonkey. Type a sentence, choose how it should move, and TextMotion Studio will animate every word with cinematic timing using React, Framer Motion, and Tailwind CSS.
