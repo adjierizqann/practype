@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: #e5e5f0;
+  background-color: #05050a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(127, 90, 240, 0.15), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(94, 234, 212, 0.1), transparent 35%),
+    #05050a;
+  background-size: cover;
+}
+
+.glow-text {
+  text-shadow: 0 0 12px rgba(127, 90, 240, 0.8), 0 0 32px rgba(127, 90, 240, 0.5);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(229, 229, 240, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
