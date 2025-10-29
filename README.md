@@ -12,26 +12,12 @@ A web-based motion typography playground inspired by Typemonkey. Type a sentence
 
 ## Getting Started
 
-### Prerequisites
+```bash
+npm install
+npm run dev
+```
 
-- [Node.js](https://nodejs.org/) 18 or newer (bundled with npm).
-- A terminal with internet access to install npm packages.
-
-### Installation & Development Server
-
-1. Install dependencies. If you encounter registry issues, point npm to a reachable mirror (for example `npm config set registry https://registry.npmmirror.com`).
-
-   ```bash
-   npm install
-   ```
-
-2. Start the Vite development server:
-
-   ```bash
-   npm run dev
-   ```
-
-3. Open the printed local URL (typically `http://localhost:5173`) in your browser to interact with TextMotion Studio.
+> **Note:** The project uses Tailwind CSS and Framer Motion. If `npm install` fails due to registry restrictions, configure npm to use a mirror that your environment allows.
 
 ## Build
 
