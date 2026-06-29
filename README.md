@@ -1,32 +1,44 @@
-![AI Assisted](https://img.shields.io/badge/AI%20Assisted-OpenAI%20Codex-blueviolet?logo=openai&logoColor=white)
-
 # TextMotion Studio
 
-A web-based motion typography playground inspired by Typemonkey. Type a sentence, choose how it should move, and TextMotion Studio will animate every word with cinematic timing using React, Framer Motion, and Tailwind CSS.
+A browser-based motion typography playground built with React, Framer Motion,
+and Tailwind CSS. Enter a sentence, choose a movement style, and preview a
+staggered word-by-word animation.
 
 ## Features
 
-- Animate each word with fade, slide, rotate, or zoom effects and randomized motion paths.
-- Adjustable animation speed with staggered timing for sequential reveals.
-- Optional background music and randomized color themes for extra flair.
-- Minimal, responsive UI with a glowing hero title and control panel.
-- Placeholder "Download as MP4" button ready for future exporting integrations.
+- Fade, slide, rotate, and zoom presets
+- Adjustable speed and staggered timing
+- Randomized motion paths and colour themes
+- Optional background audio
+- Responsive editing and preview layout
 
-## Getting Started
+The current MP4 control is a UI placeholder; video encoding and export are not
+implemented.
+
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-> **Note:** The project uses Tailwind CSS and Framer Motion. If `npm install` fails due to registry restrictions, configure npm to use a mirror that your environment allows.
-
-## Build
+Vite prints the local development URL. To verify a production build:
 
 ```bash
 npm run build
+npm run preview
 ```
 
-## License
+## Structure
 
-MIT
+```text
+src/
+├── components/ControlsPanel.jsx
+├── components/TextAnimator.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+GitHub Actions installs the locked dependency set and verifies the Vite build
+on every push and pull request.
